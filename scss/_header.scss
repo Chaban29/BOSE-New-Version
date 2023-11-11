@@ -1,0 +1,60 @@
+@import "variables";
+@import "colors";
+
+.header {
+  & .header__hero {
+    & .header__intro {
+      background: url(../BOSE\ images/Intro.png),
+        lightgray 0px 0px / 109.091% 100% no-repeat;
+      background-size: cover;
+      background-position: center calc(100% - 70%);
+      height: 720px;
+    }
+    & .header__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        & .tell__link {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          &::before {
+            display: none;
+            color: $primaryBlack;
+            content: "+1 234 555-55-55";
+            font-weight: 700;
+            line-height: 133.333%;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+          &:hover::before {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1260px;
+  padding: 32px 120px;
+  margin: 0 auto;
+}
+
+.header__title {
+  padding-top: 512px;
+  & .bose-title {
+    max-width: 411px;
+    color: $primaryWhite;
+    line-height: 100%;
+    font-size: $titleSize;
+    font-weight: 700;
+  }
+}
