@@ -73,3 +73,69 @@ body {
     }
   }
 }
+
+.sound__vision {
+  padding-bottom: 120px;
+}
+
+.sound__vision-content {
+  & .sound__vision-title {
+    max-width: 498px;
+    padding-bottom: 56px;
+    & .sound-title {
+      color: $primaryBlack;
+      font-size: $sectionSize;
+      line-height: 100%;
+      font-weight: 700;
+    }
+  }
+  & .sound__products {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    & .sound__product-card {
+      & .product__card-images {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      & .first-card,
+      .second-card {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      & .sound-heading {
+        padding-top: 16px;
+        color: $primaryBlack;
+        font-size: $primarySizeThree;
+        line-height: 140%;
+        font-weight: 700;
+      }
+    }
+  }
+  & .sound__button {
+    background: $primaryOrange;
+    color: $primaryWhite;
+    padding: 0 48px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 168.75%;
+    font-size: $primarySizeTwo;
+    width: 324px;
+    height: 56px;
+    border-radius: 8px;
+    transition: background 0.3s linear 0.1s;
+    &:hover {
+      background: $primaryBlack;
+    }
+    &:active {
+      background: $naturalBlack;
+    }
+  }
+  & .bottom-heading {
+    padding-bottom: 56px;
+  }
+}
+

@@ -224,3 +224,74 @@ body {
   line-height: 140%;
   font-weight: 700;
 }
+
+.sound__vision {
+  padding-bottom: 120px;
+}
+
+.sound__vision-content .sound__vision-title {
+  max-width: 498px;
+  padding-bottom: 56px;
+}
+.sound__vision-content .sound__vision-title .sound-title {
+  color: #1B2129;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: 700;
+}
+.sound__vision-content .sound__products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 56px;
+}
+.sound__vision-content .sound__products .sound__product-card .product__card-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sound__vision-content .sound__products .sound__product-card .first-card,
+.sound__vision-content .sound__products .sound__product-card .second-card {
+  max-width: 100%;
+  max-height: 100%;
+}
+.sound__vision-content .sound__products .sound__product-card .sound-heading {
+  padding-top: 16px;
+  color: #1B2129;
+  font-size: 24px;
+  line-height: 140%;
+  font-weight: 700;
+}
+.sound__vision-content .sound__button {
+  background: #F98921;
+  color: #fff;
+  padding: 0 48px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 168.75%;
+  font-size: 16px;
+  width: 324px;
+  height: 56px;
+  border-radius: 8px;
+  -webkit-transition: background 0.3s linear 0.1s;
+  transition: background 0.3s linear 0.1s;
+}
+.sound__vision-content .sound__button:hover {
+  background: #1B2129;
+}
+.sound__vision-content .sound__button:active {
+  background: #010810;
+}
+.sound__vision-content .bottom-heading {
+  padding-bottom: 56px;
+}
