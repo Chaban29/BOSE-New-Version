@@ -305,3 +305,33 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.timeless {
+  background: #FCFAEF;
+}
+.timeless .timeless__content {
+  padding: 120px 0 134px 0;
+}
+.timeless .timeless__content .main__container .timeless__content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 111px;
+}
+.timeless .timeless__content .main__container .timeless__content-block .timeless-title {
+  width: 498px;
+  color: #1B2129;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.timeless .timeless__content .main__container .timeless__content-block .timeless-subtitle {
+  width: 411px;
+  color: #1B2129;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+}

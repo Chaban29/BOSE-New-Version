@@ -140,11 +140,42 @@ body {
 }
 
 .banner-intro {
-    width: 100%;
+  width: 100%;
   & #banner__img {
     width: 100%;
     max-width: 100%;
     object-fit: cover;
   }
-
 }
+
+.timeless {
+  background: $primaryBackground;
+
+  & .timeless__content {
+    padding: 120px 0 134px 0;
+    & .main__container {
+      & .timeless__content-block {
+        display: flex;
+        align-items: center;
+        gap: 111px;
+
+        & .timeless-title {
+          width: 498px;
+          color: $primaryBlack;
+          font-size: $sectionSize;
+          font-weight: 700;
+          line-height: 100%;
+        }
+
+        & .timeless-subtitle {
+          width: 411px;
+          color: $primaryBlack;
+          font-size: $primarySizeTwo;
+          line-height: 140%;
+          letter-spacing: 0.15px;
+        }
+      }
+    }
+  }
+}
+
