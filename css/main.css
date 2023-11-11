@@ -295,3 +295,13 @@ body {
 .sound__vision-content .bottom-heading {
   padding-bottom: 56px;
 }
+
+.banner-intro {
+  width: 100%;
+}
+.banner-intro #banner__img {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
