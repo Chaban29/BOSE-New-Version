@@ -155,3 +155,72 @@ h6 {
 body {
   font-family: "Manrope", sans-serif !important;
 }
+
+.main__container {
+  width: 100%;
+  max-width: 1260px;
+  padding: 0px 120px;
+  margin: 0 auto;
+}
+
+.recommended {
+  padding: 120px 0px;
+}
+
+.recommended__content .recommended__title {
+  padding-bottom: 56px;
+}
+.recommended__content .recommended__title .recommended-heading {
+  color: #1B2129;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: 700;
+}
+.recommended__content .recommended__products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.recommended__content .recommended__products .recommended__product-card {
+  max-width: 324px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.recommended__content .recommended__products .recommended__product-card .recommended-image {
+  max-width: 100%;
+}
+.recommended__content .recommended__products .recommended__product-card .recommended__card-info .recommended__card-title {
+  padding-bottom: 8px;
+  color: #1B2129;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 700;
+}
+.recommended__content .recommended__products .recommended__product-card .recommended__card-info .recommended-subtitle {
+  padding-bottom: 12px;
+  color: #1B2129;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  max-width: 280px;
+}
+.recommended__content .recommended__products .recommended__product-card .recommended__card-info .recommended-price {
+  color: #1B2129;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+}
