@@ -1,0 +1,131 @@
+@import "variables";
+@import "colors";
+
+.footer {
+}
+
+.footer__content {
+  padding: 120px 0;
+
+  & .footer__hero {
+    display: flex;
+    gap: 111px;
+    & .footer__title {
+      padding-bottom: 56px;
+      & .footer-heading {
+        color: $primaryBlack;
+        line-height: 100%;
+        font-weight: 700;
+        font-size: $sectionSize;
+      }
+    }
+    & .footer__form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      & .user-name {
+        width: 498px;
+        height: 48px;
+        border-radius: 8px;
+        background: $primaryInput;
+        padding: 14px 0 14px 16px;
+      }
+      & .user-email {
+        width: 498px;
+        height: 48px;
+        border-radius: 8px;
+        background: $primaryInput;
+        padding: 14px 0 14px 16px;
+      }
+      & .text-message {
+        width: 498px;
+        height: 148px;
+        resize: none;
+        padding: 14px 16px;
+        border-radius: 8px;
+        background: $primaryInput;
+      }
+    }
+    & .footer__button {
+      & .send {
+        font-size: $primarySizeTwo;
+        width: 498px;
+        height: 56px;
+        padding: 0 48px;
+        text-align: center;
+        color: $primaryWhite;
+        font-weight: 700;
+        line-height: 168.75%;
+        background: $primaryBlack;
+        border-radius: 8px;
+        transition: background 0.4s ease-in-out 0s;
+        &:hover {
+          background: $primaryOrange;
+        }
+      }
+    }
+    & .footer__nav {
+      padding-top: 111px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      & .phone__item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        & .phone-title {
+          color: $primaryTitleColor;
+          line-height: 140%;
+          letter-spacing: 0.15px;
+          font-size: $primarySizeFour;
+        }
+        & .phone-number {
+          color: $primaryDarkBlack;
+          font-size: $primarySizeTwo;
+          line-height: 140%;
+          letter-spacing: 0.15px;
+        }
+      }
+      & .email__item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        & .email__address {
+          color: $primaryDarkBlack;
+          font-size: $primarySizeTwo;
+          line-height: 140%;
+          letter-spacing: 0.15px;
+        }
+
+        & .email-title {
+          color: $primaryTitleColor;
+          line-height: 140%;
+          letter-spacing: 0.15px;
+          font-size: $primarySizeFour;
+        }
+      }
+      & .address__item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        & .address-title {
+          color: $primaryTitleColor;
+          line-height: 140%;
+          letter-spacing: 0.15px;
+          font-size: $primarySizeFour;
+        }
+        & .address {
+          color: $primaryDarkBlack;
+          font-size: $primarySizeTwo;
+          line-height: 140%;
+          letter-spacing: 0.15px;
+          max-width: 145px;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}

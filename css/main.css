@@ -35,7 +35,7 @@
 }
 .header .header__hero .header__nav .nav .tell__link::before {
   display: none;
-  color: #1B2129;
+  color: #1b2129;
   content: "+1 234 555-55-55";
   font-weight: 700;
   line-height: 133.333%;
@@ -62,6 +62,153 @@
   line-height: 100%;
   font-size: 56px;
   font-weight: 700;
+}
+
+.footer__content {
+  padding: 120px 0;
+}
+.footer__content .footer__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 111px;
+}
+.footer__content .footer__hero .footer__title {
+  padding-bottom: 56px;
+}
+.footer__content .footer__hero .footer__title .footer-heading {
+  color: #1b2129;
+  line-height: 100%;
+  font-weight: 700;
+  font-size: 48px;
+}
+.footer__content .footer__hero .footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.footer__content .footer__hero .footer__form .user-name {
+  width: 498px;
+  height: 48px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  padding: 14px 0 14px 16px;
+}
+.footer__content .footer__hero .footer__form .user-email {
+  width: 498px;
+  height: 48px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  padding: 14px 0 14px 16px;
+}
+.footer__content .footer__hero .footer__form .text-message {
+  width: 498px;
+  height: 148px;
+  resize: none;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.footer__content .footer__hero .footer__button .send {
+  font-size: 16px;
+  width: 498px;
+  height: 56px;
+  padding: 0 48px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  line-height: 168.75%;
+  background: #1b2129;
+  border-radius: 8px;
+  -webkit-transition: background 0.4s ease-in-out 0s;
+  transition: background 0.4s ease-in-out 0s;
+}
+.footer__content .footer__hero .footer__button .send:hover {
+  background: #f98921;
+}
+.footer__content .footer__hero .footer__nav {
+  padding-top: 111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.footer__content .footer__hero .footer__nav .phone__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.footer__content .footer__hero .footer__nav .phone__item .phone-title {
+  color: #9393A3;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  font-size: 14px;
+}
+.footer__content .footer__hero .footer__nav .phone__item .phone-number {
+  color: #191919;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+}
+.footer__content .footer__hero .footer__nav .email__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.footer__content .footer__hero .footer__nav .email__item .email__address {
+  color: #191919;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+}
+.footer__content .footer__hero .footer__nav .email__item .email-title {
+  color: #9393A3;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  font-size: 14px;
+}
+.footer__content .footer__hero .footer__nav .address__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.footer__content .footer__hero .footer__nav .address__item .address-title {
+  color: #9393A3;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  font-size: 14px;
+}
+.footer__content .footer__hero .footer__nav .address__item .address {
+  color: #191919;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  max-width: 145px;
+  font-style: normal;
 }
 
 * {
@@ -171,7 +318,7 @@ body {
   padding-bottom: 56px;
 }
 .recommended__content .recommended__title .recommended-heading {
-  color: #1B2129;
+  color: #1b2129;
   font-size: 48px;
   line-height: 100%;
   font-weight: 700;
@@ -205,21 +352,21 @@ body {
 }
 .recommended__content .recommended__products .recommended__product-card .recommended__card-info .recommended__card-title {
   padding-bottom: 8px;
-  color: #1B2129;
+  color: #1b2129;
   font-size: 18px;
   line-height: 140%;
   font-weight: 700;
 }
 .recommended__content .recommended__products .recommended__product-card .recommended__card-info .recommended-subtitle {
   padding-bottom: 12px;
-  color: #1B2129;
+  color: #1b2129;
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.15px;
   max-width: 280px;
 }
 .recommended__content .recommended__products .recommended__product-card .recommended__card-info .recommended-price {
-  color: #1B2129;
+  color: #1b2129;
   font-size: 16px;
   line-height: 140%;
   font-weight: 700;
@@ -234,7 +381,7 @@ body {
   padding-bottom: 56px;
 }
 .sound__vision-content .sound__vision-title .sound-title {
-  color: #1B2129;
+  color: #1b2129;
   font-size: 48px;
   line-height: 100%;
   font-weight: 700;
@@ -267,13 +414,13 @@ body {
 }
 .sound__vision-content .sound__products .sound__product-card .sound-heading {
   padding-top: 16px;
-  color: #1B2129;
+  color: #1b2129;
   font-size: 24px;
   line-height: 140%;
   font-weight: 700;
 }
 .sound__vision-content .sound__button {
-  background: #F98921;
+  background: #f98921;
   color: #fff;
   padding: 0 48px;
   text-align: center;
@@ -287,7 +434,7 @@ body {
   transition: background 0.3s linear 0.1s;
 }
 .sound__vision-content .sound__button:hover {
-  background: #1B2129;
+  background: #1b2129;
 }
 .sound__vision-content .sound__button:active {
   background: #010810;
@@ -307,7 +454,7 @@ body {
 }
 
 .timeless {
-  background: #FCFAEF;
+  background: #fcfaef;
 }
 .timeless .timeless__content {
   padding: 120px 0 134px 0;
@@ -323,14 +470,14 @@ body {
 }
 .timeless .timeless__content .main__container .timeless__content-block .timeless-title {
   width: 498px;
-  color: #1B2129;
+  color: #1b2129;
   font-size: 48px;
   font-weight: 700;
   line-height: 100%;
 }
 .timeless .timeless__content .main__container .timeless__content-block .timeless-subtitle {
   width: 411px;
-  color: #1B2129;
+  color: #1b2129;
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.15px;
