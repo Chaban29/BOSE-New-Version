@@ -1,15 +1,13 @@
 @import "variables";
 @import "colors";
 
-.footer {
-}
-
 .footer__content {
   padding: 120px 0;
 
   & .footer__hero {
     display: flex;
     gap: 111px;
+    justify-content: space-between;
     & .footer__title {
       padding-bottom: 56px;
       & .footer-heading {
@@ -20,36 +18,56 @@
       }
     }
     & .footer__form {
+      max-width: 600px;
       display: flex;
       flex-direction: column;
       gap: 16px;
       & .user-name {
-        width: 498px;
         height: 48px;
         border-radius: 8px;
         background: $primaryInput;
         padding: 14px 0 14px 16px;
+        cursor: pointer;
+        transition: background 0.8s ease-out 0s;
+        caret-color: $primaryOrange;
+        color: $primaryOrange;
+        &:hover {
+          border: 2px solid $primaryOrange;
+          background: $primaryInput;
+        }
       }
       & .user-email {
-        width: 498px;
         height: 48px;
         border-radius: 8px;
         background: $primaryInput;
         padding: 14px 0 14px 16px;
+        cursor: pointer;
+        caret-color: $primaryOrange;
+        color: $primaryOrange;
+        &:hover {
+          border: 2px solid $primaryOrange;
+          background: $primaryInput;
+        }
       }
       & .text-message {
-        width: 498px;
         height: 148px;
         resize: none;
         padding: 14px 16px;
         border-radius: 8px;
         background: $primaryInput;
+        cursor: pointer;
+        margin-bottom: 32px;
+        caret-color: $primaryOrange;
+        color: $primaryOrange;
+        &:hover {
+          border: 2px solid $primaryOrange;
+          background: $primaryInput;
+        }
       }
     }
     & .footer__button {
       & .send {
         font-size: $primarySizeTwo;
-        width: 498px;
         height: 56px;
         padding: 0 48px;
         text-align: center;
@@ -59,6 +77,8 @@
         background: $primaryBlack;
         border-radius: 8px;
         transition: background 0.4s ease-in-out 0s;
+        display: inline-block;
+        width: 100%;
         &:hover {
           background: $primaryOrange;
         }
@@ -128,4 +148,8 @@
       }
     }
   }
+}
+
+.footer__form-menu {
+  width: 59%;
 }

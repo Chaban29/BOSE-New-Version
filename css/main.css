@@ -72,6 +72,9 @@
   display: -ms-flexbox;
   display: flex;
   gap: 111px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer__content .footer__hero .footer__title {
   padding-bottom: 56px;
@@ -83,6 +86,7 @@
   font-size: 48px;
 }
 .footer__content .footer__hero .footer__form {
+  max-width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,30 +97,50 @@
   gap: 16px;
 }
 .footer__content .footer__hero .footer__form .user-name {
-  width: 498px;
   height: 48px;
   border-radius: 8px;
   background: #f9f9f9;
   padding: 14px 0 14px 16px;
+  cursor: pointer;
+  -webkit-transition: background 0.8s ease-out 0s;
+  transition: background 0.8s ease-out 0s;
+  caret-color: #f98921;
+  color: #f98921;
+}
+.footer__content .footer__hero .footer__form .user-name:hover {
+  border: 2px solid #f98921;
+  background: #f9f9f9;
 }
 .footer__content .footer__hero .footer__form .user-email {
-  width: 498px;
   height: 48px;
   border-radius: 8px;
   background: #f9f9f9;
   padding: 14px 0 14px 16px;
+  cursor: pointer;
+  caret-color: #f98921;
+  color: #f98921;
+}
+.footer__content .footer__hero .footer__form .user-email:hover {
+  border: 2px solid #f98921;
+  background: #f9f9f9;
 }
 .footer__content .footer__hero .footer__form .text-message {
-  width: 498px;
   height: 148px;
   resize: none;
   padding: 14px 16px;
   border-radius: 8px;
   background: #f9f9f9;
+  cursor: pointer;
+  margin-bottom: 32px;
+  caret-color: #f98921;
+  color: #f98921;
+}
+.footer__content .footer__hero .footer__form .text-message:hover {
+  border: 2px solid #f98921;
+  background: #f9f9f9;
 }
 .footer__content .footer__hero .footer__button .send {
   font-size: 16px;
-  width: 498px;
   height: 56px;
   padding: 0 48px;
   text-align: center;
@@ -127,6 +151,8 @@
   border-radius: 8px;
   -webkit-transition: background 0.4s ease-in-out 0s;
   transition: background 0.4s ease-in-out 0s;
+  display: inline-block;
+  width: 100%;
 }
 .footer__content .footer__hero .footer__button .send:hover {
   background: #f98921;
@@ -209,6 +235,10 @@
   letter-spacing: 0.15px;
   max-width: 145px;
   font-style: normal;
+}
+
+.footer__form-menu {
+  width: 59%;
 }
 
 * {
@@ -299,6 +329,61 @@ h6 {
   font-weight: 400;
 }
 
+@media screen and (max-width: 890px) {
+  .recommended__content .recommended__products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .footer__content .footer__hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 80px;
+  }
+  .footer__content .footer__hero .footer__nav {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 774px) {
+  .header .header__hero .header__intro {
+    min-height: 100vh;
+  }
+  .header__title {
+    padding-top: 590px;
+  }
+  .header__container {
+    padding: 32px 72px;
+  }
+  .recommended__content .recommended__title .recommended-heading {
+    font-size: 40px;
+  }
+  .main__container {
+    padding: 0 72px;
+  }
+  .footer__content .footer__hero .footer__button .send {
+    width: 100%;
+  }
+  .sound__vision-content .sound__button {
+    width: 100%;
+  }
+  .timeless .timeless__content .main__container .timeless__content-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .timeless .timeless__content .main__container .timeless__content-block .timeless-title {
+    text-align: center;
+  }
+}
 body {
   font-family: "Manrope", sans-serif !important;
 }
@@ -330,14 +415,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  gap: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 .recommended__content .recommended__products .recommended__product-card {
-  max-width: 324px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,7 +492,7 @@ body {
 }
 .sound__vision-content .sound__products .sound__product-card .first-card,
 .sound__vision-content .sound__products .sound__product-card .second-card {
-  max-width: 100%;
+  max-width: 50%;
   max-height: 100%;
 }
 .sound__vision-content .sound__products .sound__product-card .sound-heading {

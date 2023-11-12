@@ -35,10 +35,9 @@ body {
   & .recommended__products {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 50px;
     justify-content: space-between;
     & .recommended__product-card {
-      max-width: 324px;
       display: flex;
       flex-direction: column;
       gap: 24px;
@@ -102,7 +101,7 @@ body {
 
       & .first-card,
       .second-card {
-        max-width: 100%;
+        max-width: calc(100% - 50%);
         max-height: 100%;
       }
 
@@ -178,4 +177,3 @@ body {
     }
   }
 }
-
