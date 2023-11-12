@@ -107,4 +107,49 @@
   .banner-intro #banner__img {
     max-height: 200px;
   }
+  .timeless
+    .timeless__content
+    .main__container
+    .timeless__content-block
+    .timeless-title {
+    font-size: $thirdMediaSize;
+  }
+  .timeless .timeless__content .main__container .timeless__content-block {
+    gap: 24px;
+  }
+  .timeless .timeless__content {
+    padding: 48px 0 48px 0;
+  }
+  .footer__content .footer__hero .footer__title .footer-heading {
+    font-size: $thirdMediaSize;
+  }
+  .sound__vision-content .sound__products .sound__product-card .sound-heading {
+    font-size: $primarySizeOne;
+  }
+  .sound__vision-content .sound__vision-title .sound-title {
+    font-size: $thirdMediaSize;
+    max-width: 270px;
+  }
+  .bose-logo {
+    max-width: 152px;
+    max-height: 16px;
+  }
+  .tell__link {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    &::after {
+      display: none;
+      color: $primaryBlack;
+      content: "+1 234 555-55-55";
+      font-weight: 700;
+      font-size: $fourMediaSize;
+      line-height: 133.333%;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    &:hover::before {
+      display: inline-block;
+    }
+  }
 }
