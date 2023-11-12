@@ -155,11 +155,10 @@ body {
     & .main__container {
       & .timeless__content-block {
         display: flex;
-        align-items: center;
         gap: 111px;
 
         & .timeless-title {
-          width: 498px;
+          max-width: 498px;
           color: $primaryBlack;
           font-size: $sectionSize;
           font-weight: 700;

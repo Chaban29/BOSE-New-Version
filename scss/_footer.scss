@@ -149,7 +149,24 @@
     }
   }
 }
-
 .footer__form-menu {
   width: 59%;
+}
+
+.footer__copyright {
+  border-top: 2px solid $primaryBlack;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: $primaryBlack;
+  font-weight: 700;
+  font-size: $primarySizeOne;
+}
+.footer__content {
+  padding-top: 120px;
+  padding-bottom: 0;
+}
+
+.footer__content .footer__hero {
+  padding-bottom: 30px;
 }
