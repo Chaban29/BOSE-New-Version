@@ -1,0 +1,26 @@
+@import "colors";
+@import "variables";
+
+.recommended__content
+  .recommended__products
+  .recommended__product-card
+  .recommended-image {
+  transition: all 0.2s linear 0s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+  }
+}
+
+.sound__vision-content .sound__products .sound__product-card .first-card,
+.sound__vision-content .sound__products .sound__product-card .second-card {
+  transition: all 0.4s ease-in-out 0s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(0.85);
+  }
+}
+
