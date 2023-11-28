@@ -7,8 +7,8 @@
       background: url(../BOSE\ images/Intro.png),
         lightgray 0px 0px / 109.091% 100% no-repeat;
       background-size: cover;
-      background-position: center calc(100% - 70%);
-      height: 720px;
+      background-position: center calc(100% - 60%);
+      height: 100vh;
     }
     & .header__nav {
       display: flex;
@@ -54,7 +54,7 @@
 }
 
 .header__title {
-  padding-top: 512px;
+  padding-top: 312px;
   & .bose-title {
     max-width: 411px;
     color: $primaryWhite;

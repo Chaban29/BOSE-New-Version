@@ -1,8 +1,8 @@
 .header .header__hero .header__intro {
   background: url(../BOSE\ images/Intro.png), lightgray 0px 0px/109.091% 100% no-repeat;
   background-size: cover;
-  background-position: center 30%;
-  height: 720px;
+  background-position: center 40%;
+  height: 100vh;
 }
 .header .header__hero .header__nav {
   display: -webkit-box;
@@ -62,7 +62,7 @@
 }
 
 .header__title {
-  padding-top: 512px;
+  padding-top: 312px;
 }
 .header__title .bose-title {
   max-width: 411px;
@@ -641,6 +641,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 35px;
 }
 .sound__vision-content .sound__products .sound__product-card .first-card,
 .sound__vision-content .sound__products .sound__product-card .second-card {
