@@ -74,6 +74,7 @@
 
 .footer__content {
   padding: 120px 0;
+  padding-bottom: 120px;
 }
 .footer__content .footer__hero {
   display: -webkit-box;
@@ -261,7 +262,7 @@
 
 .footer__content {
   padding-top: 120px;
-  padding-bottom: 0;
+  padding-bottom: 120px;
 }
 
 .footer__content .footer__hero {
@@ -379,161 +380,18 @@ h6 {
           transform: scale(0.85);
 }
 
-@media screen and (max-width: 890px) {
-  .footer__form-menu {
-    width: 100%;
-  }
-  .recommended__content .recommended__products {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .header .header__hero .header__intro {
-    height: auto;
-  }
-  .footer__content .footer__hero {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 80px;
-  }
-  .footer__content .footer__hero .footer__nav {
-    padding-top: 0px;
-  }
-  .timeless .timeless__content .main__container .timeless__content-block {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .sound__vision-content .sound__vision-title .sound-title {
-    max-width: 410px;
-  }
+.logo {
+  -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
-@media screen and (max-width: 774px) {
-  .header__title {
-    padding-top: 590px;
-  }
-  .header__container {
-    padding: 32px 72px;
-  }
-  .recommended__content .recommended__title .recommended-heading {
-    font-size: 40px;
-  }
-  .main__container {
-    padding: 0 72px;
-  }
-  .footer__content .footer__hero .footer__button .send {
-    width: 100%;
-  }
-  .sound__vision-content .sound__button {
-    width: 100%;
-  }
-  .timeless .timeless__content .main__container .timeless__content-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .timeless .timeless__content .main__container .timeless__content-block .timeless-title {
-    text-align: center;
-  }
-  .timeless .timeless__content .main__container .timeless__content-block {
-    gap: 75px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .timeless .timeless__content .main__container .timeless__content-block .timeless-title {
-    text-align: left;
-  }
-  .timeless .timeless__content .main__container .timeless__content-block .timeless-subtitle {
-    max-width: 288px;
-  }
-  .footer__form-menu {
-    width: 100%;
-  }
+.logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
-@media screen and (max-width: 510px) {
-  .header__title .bose-title {
-    font-size: 36px;
-    max-width: 280px;
-  }
-  .header__container {
-    padding: 20px 24px;
-  }
-  .header .header__hero .header__intro {
-    max-height: 568px;
-  }
+
+@media screen and (width <= 1440px) {
   .header__title {
-    padding-top: 384px;
-  }
-  .logo {
-    max-width: 156px;
-    max-height: 16px;
-  }
-  .recommended__content .recommended__title .recommended-heading {
-    font-size: 32px;
-  }
-  .main__container {
-    padding: 0 20px;
-  }
-  .banner-intro #banner__img {
-    max-height: 200px;
-  }
-  .timeless .timeless__content .main__container .timeless__content-block .timeless-title {
-    font-size: 32px;
-  }
-  .timeless .timeless__content .main__container .timeless__content-block {
-    gap: 24px;
-  }
-  .timeless .timeless__content {
-    padding: 48px 0 48px 0;
-  }
-  .footer__content .footer__hero .footer__title .footer-heading {
-    font-size: 32px;
-  }
-  .sound__vision-content .sound__products .sound__product-card .sound-heading {
-    font-size: 18px;
-  }
-  .sound__vision-content .sound__vision-title .sound-title {
-    font-size: 32px;
-    max-width: 270px;
-  }
-  .bose-logo {
-    max-width: 152px;
-    max-height: 16px;
-  }
-  .tell__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .tell__link::after {
-    display: none;
-    color: #1b2129;
-    content: "+1 234 555-55-55";
-    font-weight: 700;
-    font-size: 10px;
-    line-height: 133.333%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  .tell__link:hover::before {
-    display: inline-block;
+    padding-top: 712px;
   }
 }
 body {
@@ -641,7 +499,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 35px;
+  gap: 15px;
 }
 .sound__vision-content .sound__products .sound__product-card .first-card,
 .sound__vision-content .sound__products .sound__product-card .second-card {
