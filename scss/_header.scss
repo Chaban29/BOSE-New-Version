@@ -8,7 +8,6 @@
         lightgray 0px 0px / 109.091% 100% no-repeat;
       background-size: cover;
       background-position: center calc(100% - 60%);
-      height: 100vh;
     }
     & .header__nav {
       display: flex;
@@ -23,22 +22,29 @@
           display: flex;
           align-items: center;
           gap: 8px;
-          transition: all 0.3s ease-out 0s;
+          transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
           &:hover {
-            transform: scale(1.15);
+            transform: scale(1.2);
           }
           &::before {
-            display: none;
+            white-space: nowrap;
+            justify-content: left;
+            content: "+1 234 5555-55-55";
+            transform: translateX(-8px);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
             color: $primaryBlack;
-            content: "+1 234 555-55-55";
             font-weight: 700;
-            line-height: 133.333%;
+            line-height: 140%;
             letter-spacing: 2px;
             text-transform: uppercase;
-            transition: all 0.3s linear 0s;
+            cursor: pointer;
           }
           &:hover::before {
             display: inline-block;
+            opacity: 1;
+            visibility: visible;
           }
         }
       }
@@ -51,10 +57,13 @@
   max-width: 1260px;
   padding: 32px 120px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .header__title {
-  padding-top: 312px;
   & .bose-title {
     max-width: 411px;
     color: $primaryWhite;

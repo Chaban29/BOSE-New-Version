@@ -1,0 +1,6 @@
+@mixin hoveredFooterAddress {
+  transition: all 0.3s linear 0s;
+  &:hover {
+    color: $primaryOrange;
+  }
+}

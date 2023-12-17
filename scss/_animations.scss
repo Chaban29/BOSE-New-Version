@@ -27,6 +27,30 @@
 .logo {
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
   &:hover {
-    transform: scale(1.10);
+    transform: scale(1.1);
   }
 }
+
+.footer__content .footer__hero .footer__nav .phone__item .phone-number {
+  @include hoveredFooterAddress;
+}
+
+.footer__content .footer__hero .footer__nav .email__item .email__address {
+  @include hoveredFooterAddress;
+}
+
+.footer__content .footer__hero .footer__nav .address__item .address {
+  @include hoveredFooterAddress;
+  cursor: pointer;
+}
+
+.banner-intro #banner__img {
+  cursor: pointer;
+  filter: blur(2px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    filter: blur(0);
+    transform: translateY(-10px);
+  }
+}
+
