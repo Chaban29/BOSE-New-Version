@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOSE New Version</title>
     <link rel="icon" href="BOSE images/Header Images/favicon.542138fa.png" />
+    <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800"
       rel="stylesheet"
     />
+    <script src="/js/index.js" defer></script>
   </head>
   <body>
     <div id="page">
@@ -29,6 +31,7 @@
                     />
                   </a>
                 </div>
+
                 <nav class="nav">
                   <a href="tel:+1 234 5555-55-55" class="tell__link">
                     <img
@@ -37,13 +40,49 @@
                       class="tell-icon"
                     />
                   </a>
-                  <a href="#" alt="Burger Menu" class="burger-menu icon--menu">
+                  <div class="burger-menu icon--menu">
+                    <span class="burger__item-line"></span>
+                  </div>
+                </nav>
+
+                <nav class="burger-nav">
+                  <div class="burgerTop__items">
                     <img
-                      src="BOSE images/Header Images/Icon-Burger-menu.svg"
-                      alt="Burger Menu Icon"
-                      class="burger__icon--item"
+                      src="BOSE images/Header Images/BANG & OLUFSEN.svg"
+                      alt="BANG & OLUFSEN"
+                      class="logo"
+                      style="cursor: pointer"
                     />
-                  </a>
+                    </a>
+                    <img
+                      style="cursor: pointer"
+                      id="close__icon"
+                      src="./BOSE images/Header Images/Icon-Close.svg"
+                      alt="burger close icon"
+                    />
+                  </div>
+                  <ul class="burger__nav--menu">
+                    <li class="burger__item--item">
+                      <a href="" class="burger__link--item recommended-scroll">
+                        Recommended
+                      </a>
+                    </li>
+                    <li class="burger__item--item">
+                      <a href="" class="burger__link--item">Categories</a>
+                    </li>
+                    <li class="burger__item--item">
+                      <a href="" class="burger__link--item">About Us</a>
+                    </li>
+                    <li class="burger__item--item">
+                      <a href="" class="burger__link--item">Contact Us</a>
+                    </li>
+                  </ul>
+                  <div class="contacts__items">
+                    <a href="tel:+123-456-789" class="contacts__number">
+                      +1 234 5555-55-55
+                    </a>
+                    <span class="order"> call to order </span>
+                  </div>
                 </nav>
               </div>
               <div class="header__title">
@@ -284,6 +323,5 @@
       </footer>
       <!-- Footer End -->
     </div>
-    <script src="js/animations.js" defer></script>
   </body>
 </html>
